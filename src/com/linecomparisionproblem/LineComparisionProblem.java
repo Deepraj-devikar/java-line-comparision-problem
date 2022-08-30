@@ -13,7 +13,7 @@ public class LineComparisionProblem {
 		double line1Length = (double) Math.sqrt(Math.pow(line1X2 - line1X1, 2) + Math.pow(line1Y2 - line1Y1, 2));
 		System.out.println("First line point 1 is ("+line1X1+", "+line1Y1+"), point 2 is ("+line1X2+", "+line1Y2+") and length is "+line1Length);
 		
-		double line2X1 = 5.8;
+		double line2X1 = 4.8;
 		double line2Y1 = 4.2;
 		double line2X2 = 1.9;
 		double line2Y2 = 9.7;
@@ -22,8 +22,10 @@ public class LineComparisionProblem {
 		
 		if (line1Length == line2Length) {
 			System.out.println("Both lines are equal");
+		} else if (line1Length > line2Length) {
+			System.out.println("Line 1 is greater than line 2");
 		} else {
-			System.out.println("Lines are not equal");
+			System.out.println("Line 1 is less than line 2");
 		}
 	}
 
